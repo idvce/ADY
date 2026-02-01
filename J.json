@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "total_results": 100,
+  "cars": [
+    {
+      "id": "123",
+      "name": "Toyota Vios 1.5G",
+      "price": 450000000,
+      "year": 2019,
+      "mileage": 45000,
+      "location": "Hà Nội"
+    },
+    {
+      "id": "124",
+      "name": "Hyundai Accent",
+      "price": 380000000,
+      "year": 2018,
+      "mileage": 60000,
+      "location": "TP.HCM"
+    }
+  ]
+}
