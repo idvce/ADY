@@ -11,7 +11,7 @@ def fetch_web_data(url):
     try:
         # send request HTTP GET
         response = requests.get(url, timeout=10)
-        response.raise_for_status()  # Báo lỗi nếu HTTP status != 200
+        response.raise_for_status()  # Report an error if HTTP status != 200
 
         # HTML parsing using Beautifulsoup
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -32,7 +32,7 @@ def fetch_web_data(url):
         return None
 
 if __name__ == "__main__":
-    url = "https://xe.chotot.com/mua-ban-oto-da-nang"  # Thay bằng URL bạn muốn lấy dữ liệu
+    url = "https://xe.chotot.com/mua-ban-oto-da-nang"  #replace with URL if you wait to get data
     data = fetch_web_data(url)
 
     if data:
